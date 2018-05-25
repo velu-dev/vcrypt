@@ -1,14 +1,14 @@
 #Gem For Password Encryption using Bcrypt
 
-##Step 1 
+#Step 1 
  	
  	gem install vecrypt
- 	
-##step 2
+
+#step 2
 
 	require "vecrypt"
 
-##Step 3 
+#Step 3 
 
  	#Encrypt password
 
