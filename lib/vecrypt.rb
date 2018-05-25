@@ -7,7 +7,7 @@ def initialize(password)
 end
 def encrypt
 	password = {salt: @salt, password: @password}
-	return password
+	password
 end
 end
 class VeDecrypt
@@ -17,6 +17,6 @@ end
 
 def decrypt
 	result = @result
-	return result
+	result
 end
 end

@@ -1,21 +1,23 @@
-# Gem For Password Encryption using Bcrypt
+#Gem For Password Encryption using Bcrypt
 
-## Step 1
+##Step 1 
+ 	
+ 	gem install vecrypt
+ 	
+##step 2
 
-`gem install vecrypt`
+	require "vecrypt"
 
-## Step 2
+##Step 3 
 
-# Encrypt password
+ 	#Encrypt password
 
-`password = VeEncrypt.new('your password')`
+    password = VeEncrypt.new('your password')
 
-`salt = password.encrypt[:salt]`  #salt is a key
+    salt = password.encrypt[:salt]  #salt is a key
+    hash_password = password.encrypt[:password]  #password is a key
 
-`hash_password = password.encrypt[:password]`  #password is a key
+   #Decrypt Password
 
-# Decrypt Password
-
-`password_check = VeDecrypt.new('your password', salt , hash_password)`
-
-`password_check.decrypt` # it return true or false
+   	password_check = VeDecrypt.new('your password', salt , hash_password)
+   	password_check.decrypt # it return true or false
